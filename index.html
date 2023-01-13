@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;1,600&family=Karla:wght@400;700&display=swap');
+    </style>
+  <style>
+    
+  *
+  {
+   padding: 0%;
+   margin: 0%;
+
+  }
+  body
+  {
+  width: 100%;
+  height:100vh;
+  background-color:rgb(207, 203, 203);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: 'Karla', sans-serif;  
+  }
+  .main
+  {
+  width:700px;;
+  height:500px;
+  display: grid;
+  grid-template-rows:1fr 1fr;
+  margin:10% auto 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+  }
+  .top
+  {
+  width:700px;
+  height: 250px;
+  background-color: white;
+  border-top-left-radius:12px;
+  border-top-right-radius:12px;
+
+
+  }
+  .buttom
+  {
+  width: 700px;
+  height: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom-left-radius:12px;
+  border-bottom-right-radius:12px;
+  background-color:hsl(179, 62%, 43%); 
+
+  }
+  .buttom>.left
+  {
+  padding:20px 20px 0px 40px;  
+  }
+  .buttom>.left>h2
+  {
+  padding-bottom: 10px;  
+  }
+  .buttom>.left>p
+  {
+  padding-bottom: 30px;  
+  }
+  .buttom > .right
+  {
+  background-color:rgba(89, 241, 239, 0.5);
+  padding:20px 80px 0px 40px;  
+  }
+  .buttom>.right>h2
+  {
+  padding-bottom:10px;  
+  }
+  .price{
+  padding-bottom:7px;  
+  }
+  .btn
+  {
+  width:250px;
+  height: 50px;  
+  background-color: hsl(71, 73%, 54%);
+  border-radius:5px;
+  border:1px solid white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  color: white;  
+  }
+  .price
+  {
+  display: flex;  
+  }
+  .price>p{
+    margin-top:9px;
+    margin-left:5px;
+  }
+
+  </style>
+</head>
+<body>
+  <div class="main">
+  
+  <div class="top">
+  <h2 style="color:hsl(179, 62%, 43%);padding:20px 80px 0px 40px; ">Join our community</h2>
+  <h3 style="color: hsl(71, 73%, 54%);padding:20px 80px 0px 40px;">30-day, hassle-free money back guarantee</h3>
+  <h4 style="color:hsl(205, 11%, 67%);padding:20px 80px 0px 40px;">Gain access to our full library of tutorials along with expert code reviews. 
+    Perfect for any developers who are serious about honing their skills.</h4>
+
+  </div> 
+  <div class="buttom">
+   <div class="left" style="color: white;">
+   <h2>Monthly Subscription</h2>
+   <div class="price">
+   <h1>&dollar;29</h1>
+   <p>per Month</p>
+   </div>
+   
+   <p style="opacity:0.6;">Full access for less than &dollar;1 a day</p>
+   <button class="btn">Sign Up</button>
+   </div>
+   <div class="right" style="color: white;">
+   <h2>Why Us</h2>
+   <p style="opacity:0.6;"> Tutorials by industry experts
+    Peer &amp; expert code review
+    Coding exercises
+    Access to our GitHub repos
+    Community forum
+    Flashcard decks
+    New videos every week</p>
+   </div>    
+  </div>
+  </div>
+  
+
+</body>
+</html>
